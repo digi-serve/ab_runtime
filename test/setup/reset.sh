@@ -8,7 +8,7 @@ echo "SET FOREIGN_KEY_CHECKS = 0;" > ./drop_all_tables.sql
 
 ## Remove all our remaining Views as well:
 echo \
-"SET @views = NULL; 
+"SET @views = NULL;
 SELECT GROUP_CONCAT('\`',table_schema, '\`.', table_name) INTO @views \
  FROM information_schema.views  \
  WHERE table_schema = \"appbuilder-admin\"; \
