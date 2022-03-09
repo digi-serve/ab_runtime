@@ -22,6 +22,10 @@ jobs:
            with:
               repository: digi-serve/kitchensink_app
               path: ab/test/e2e/cypress/integration/kitchensink_app
+              
+         # Docker's daemon couldn't find the network "ab_default" so the services aren't created
+         - name: Restart Docker
+           run: sudo systemctl restart docker
 
          - name: Deploy Stack
            run: ./UP.sh -t -q
