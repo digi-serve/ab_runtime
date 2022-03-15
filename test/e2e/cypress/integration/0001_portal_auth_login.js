@@ -1,6 +1,9 @@
 const Config = require("../../../setup/config.js");
 const Common = require("../../../setup/common.js");
 
+// Don't stop tests on uncaught errors
+Cypress.on("uncaught:exception", () => false);
+
 describe("Login Page", () => {
    before(() => {
       // make sure we have a clean slate before continuing.
