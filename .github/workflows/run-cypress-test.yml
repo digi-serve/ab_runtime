@@ -39,4 +39,5 @@ jobs:
               config: baseUrl=http://localhost:8080,responseTimeout=100000,defaultCommandTimeout=24000,retries=2
               wait-on: "http://localhost:8080"
               wait-on-timeout: 300
+              install: false
               env: stack=ab
