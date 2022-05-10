@@ -247,6 +247,24 @@ services:
   #/user_manager
 
 
+  #custom_reports: A service for custom reports.
+  appbuilder:
+    image: node
+    environment:
+      - COTE_DISCOVERY_REDIS_HOST=redis
+    volumes:
+      - type: bind
+        source: ./developer/custom_reports
+        target: /app
+      - config:/app/config
+    depends_on:
+      - redis
+      - config
+    working_dir: /app
+    command: [ "node", "--inspect=0.0.0.0:9229", "app.js" ]
+  #/custom_reports
+  
+
 #  #watchtower: monitor and update our running containers
 #  watchtower:
 #    image: v2tec/watchtower

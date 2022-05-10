@@ -65,3 +65,7 @@ services:
   #   ports:
   #     - "9229:9229"
 
+   #custom_reports: (AppBuilder) A microservice for Custom Reports
+   # custom_reports:
+   #   ports:
+   #     - "9229:9229"
