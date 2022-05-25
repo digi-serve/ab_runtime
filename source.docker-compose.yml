@@ -101,6 +101,19 @@ services:
   #/bot_manager
 
 
+   # custom_reports: A microservice for managing custom reports
+    custom_reports:
+      image: digiserve/ab-custom-reports:<%=tag%>
+      environment:
+        - COTE_DISCOVERY_REDIS_HOST=redis
+      volumes:
+        - config:/app/config
+      depends_on:
+        - redis
+        - config
+   #/custom_reports
+
+
   #definition_manager: (AppBuilder) A service to manage the definitions for a running AppBuilder platform.
   definition_manager:
     image: digiserve/ab-definition-manager:<%=tag%>
@@ -191,19 +204,6 @@ services:
       - redis
       - config
   #/user_manager
-
-
- # custom_reports: A microservice for managing custom reports
-  custom_reports:
-    image: digiserve/ab-custom-reports:<%=tag%>
-    environment:
-      - COTE_DISCOVERY_REDIS_HOST=redis
-    volumes:
-      - config:/app/config
-    depends_on:
-      - redis
-      - config
- #/custom_reports
 
 
 #  #watchtower: monitor and update our running containers
