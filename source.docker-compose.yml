@@ -14,7 +14,7 @@ services:
 
   #nginx setup
   web:
-    image: digiserve:web
+    image: digiserve/ab-web:<%=tag%>
     volumes:
       - type: bind
         source: ./nginx/html
@@ -193,6 +193,20 @@ services:
       - redis
       - config
   #/process_manager
+
+
+  #relay: (Appbuilder} A service to handle the communications with our relay server.
+  relay:
+    image: digiserve/ab-relay:<%=tag%>
+    environment:
+     - COTE_DISCOVERY_REDIS_HOST=redis
+    hostname: relay
+    volumes:
+      - config:/app/config
+    depends_on:
+      - redis
+      - config
+  #/relay
 
 
   #tenant_manager: (AppBuilder) A service to manage the site's tenants
