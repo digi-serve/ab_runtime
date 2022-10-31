@@ -122,16 +122,16 @@ const updateConfig = async () => {
       `docker stack deploy -c config-compose.yml${stack}`
    );
 
+   await wait(5000);
+
    while (
-      (
+      !(
          await runCommand(
             `docker service logs${stack}_config | tail -1 | grep "... config preparation complete" || true`
          )
       ).stdout
    )
       await wait(1000);
-
-   await wait(5000);
 
    return response;
 };
@@ -201,7 +201,7 @@ const Do = async () => {
 
       await processHandler("Reseting config", updateConfig);
 
-      await wait(10000);
+      await wait(30000);
 
       await processHandler(
          "Updating services",
