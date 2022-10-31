@@ -119,12 +119,12 @@ services:
         delay: 5s
         max_attempts: 3
         window: 120s
-    
+
   #bot_manager: our #slack bot service
   bot_manager:
-    ports:
-      - "3000:3000"
-      # - "9229:9229"
+    # ports:
+    #   - "3000:3000"
+    #   - "9229:9229"
     deploy:
       replicas: 1
       update_config:
