@@ -12,7 +12,7 @@ on:
 jobs:
    cypress-test:
       name: Run Tests
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-20.04
       steps:
          - name: Install AppBuilder
            uses: digi-serve/ab-install-action@v1
@@ -22,13 +22,13 @@ jobs:
               runtime: ${{ github.sha }}
 
          - name: Check out kitchen-sink tests
-           uses: actions/checkout@v2
+           uses: actions/checkout@v3
            with:
               repository: digi-serve/kitchensink_app
               path: ab/test/e2e/cypress/integration/kitchensink_app
 
          - name: Deploy Stack
-           run: ./UP.sh -t
+           run: ./UP.sh -t -q
            working-directory: ./ab
 
          # These next steps are to save our ablogs to file
