@@ -40,13 +40,13 @@ if (os.platform() == "win32") {
    // windows method of gathering the service names:
    stdout = shell
       .exec(
-         `for /f "tokens=2" %a in ('docker service ls ^| findstr "wo_" ') do @echo %a`
+         `for /f "tokens=2" %a in ('docker service ls ^| findstr "ab_" ') do @echo %a`
       )
       .stdout.replace(/\r/g, "");
 } else {
    // common unix method of gathering the service names:
    stdout = shell.exec(
-      `docker service ls | grep "wo_" | awk '{ print $2 }'`
+      `docker service ls | grep "ab_" | awk '{ print $2 }'`
    ).stdout;
 }
 
