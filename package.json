@@ -24,10 +24,10 @@
     "test:boot": "env-cmd docker stack deploy -c docker-compose.dev.yml -c ./test/setup/test-compose.yml test_ab",
     "test:down": "appbuilder test down ab",
     "test:wait": "env-cmd appbuilder test waitBoot ab",
-    "test:e2e": "env-cmd cypress run --project ./test/e2e",
-    "test:e2e:ab-runtime": "env-cmd cypress run --config-file cypress.ab_runtime.mjs --project ./test/e2e",
-    "test:e2e:app": "env-cmd cypress run --config-file cypress.app.mjs --project ./test/e2e",
-    "test:e2e:ab-designer": "env-cmd cypress run --config-file cypress.plugin.ab_designer.mjs --project ./test/e2e",
+    "test:e2e": "env-cmd cypress run --reporter dot --project ./test/e2e",
+    "test:e2e:ab-runtime": "env-cmd cypress run --config-file cypress.ab_runtime.mjs --reporter dot --project ./test/e2e",
+    "test:e2e:app": "env-cmd cypress run --config-file cypress.app.mjs --reporter dot --project ./test/e2e",
+    "test:e2e:ab-designer": "env-cmd cypress run --config-file cypress.plugin.ab_designer.mjs --reporter dot --project ./test/e2e",
     "test:reset": "bash testReset.sh"
   }
 }
