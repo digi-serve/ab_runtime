@@ -22,6 +22,6 @@ DEALLOCATE PREPARE stmt; " \
 ## Now turn back on foreign key checks
 echo "SET FOREIGN_KEY_CHECKS = 1;" >> ./drop_all_tables.sql
 
-mysql -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./drop_all_tables.sql
-mysql -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./sql/reset.sql
-mysql -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./sql/reset_tenant.sql
+mariadb -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./drop_all_tables.sql
+mariadb -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./sql/reset.sql
+mariadb -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" < ./sql/reset_tenant.sql

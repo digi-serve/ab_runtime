@@ -79,7 +79,7 @@ Cypress.Commands.add("RunSQL", (folder, files, fail = true) => {
 
       cy.exec(
          /* eslint-disable no-useless-escape*/
-         `docker exec ${containerId} bash -c "mysql -u ${user} -p${password} \"appbuilder-admin\" < ./sql/combineSql.sql"`,
+         `docker exec ${containerId} bash -c "mariadb -u ${user} -p${password} \"appbuilder-admin\" < ./sql/combineSql.sql"`,
          { failOnNonZeroExit: fail }
       );
       cy.exec(`docker exec ${containerId} bash -c "rm ./sql/combineSql.sql"`, {
