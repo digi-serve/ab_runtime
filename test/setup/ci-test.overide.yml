@@ -13,12 +13,9 @@ services:
       - type: bind
         source: ./test/setup/reset.sh
         target: /reset.sh
-      - type: bind
-        source: ./mysql/init/02-tenant_manager.sql
-        target: /sql/reset_tenant.sql
-      - type: bind
-        source: ./mysql/init/03-site_tables.sql
-        target: /sql/reset.sql
+     - type: bind
+        source: ./test/setup/reset-user.sql
+        target: /reset.sh
   #/db
 
   #api_sails: our API end point
