@@ -13,7 +13,7 @@ services:
       - type: bind
         source: ./test/setup/reset.sh
         target: /reset.sh
-     - type: bind
+      - type: bind
         source: ./test/setup/reset-user.sql
         target: /reset-user.sql
   #/db
