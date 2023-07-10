@@ -23,7 +23,7 @@ services:
         target: /reset.sh
       - type: bind
         source: ./test/setup/reset-user.sql
-        target: /reset.sh
+        target: /reset-user.sql
   #/db
 
   #api_sails: our API end point
