@@ -20,14 +20,16 @@
     "dev-compose": "docker-compose -f docker-compose.dev.yml up & node_modules/.bin/nodemon app.js",
     "dev": "node_modules/.bin/nodemon app.js & docker stack deploy -c docker-compose.dev.yml ab",
     "cypress:open": "env-cmd cypress open --project ./test/e2e",
-    "test": "appbuilder test setup ab && npm run test:wait &&  npm run test:e2e",
+    "test": "node ./ab-cli/index.js test setup ab && npm run test:wait",
     "test:boot": "env-cmd docker stack deploy -c docker-compose.dev.yml -c ./test/setup/test-compose.yml test_ab",
-    "test:down": "appbuilder test down ab",
-    "test:wait": "env-cmd appbuilder test waitBoot ab",
+    "test:down": "node ./ab-cli/index.js test down ab",
+    "test:wait": "env-cmd node ./ab-cli/index.js test waitBoot ab",
     "test:e2e": "env-cmd cypress run --reporter dot --project ./test/e2e",
     "test:e2e:ab-runtime": "env-cmd cypress run --config-file cypress.ab_runtime.mjs --reporter dot --project ./test/e2e",
     "test:e2e:app": "env-cmd cypress run --config-file cypress.app.mjs --reporter dot --project ./test/e2e",
     "test:e2e:ab-designer": "env-cmd cypress run --config-file cypress.plugin.ab_designer.mjs --reporter dot --project ./test/e2e",
-    "test:reset": "bash testReset.sh"
+    "test:reset": "bash testReset.sh",
+    "test:configReset": "bash configResetTest.sh",
+    "update": "cd developer/web && rm -rf ./assets && git restore . && cd ../appbuilder/AppBuilder/core && git restore . && cd ../../../../ && node ./ab-cli/index.js update dev && cd ./developer/ab_platform_web && npm install -f && cd ../api_sails && npm install -f && cd ../appbuilder/AppBuilder && npm install -f && cd .. && npm install -f && cd ../bot_manager && npm install -f && cd ../config && npm install -f && cd ../custom_reports/AppBuilder && npm install -f && cd .. && npm install -f && cd ../definition_manager/AppBuilder && npm install -f && cd .. && npm install -f && cd ../file_processor/AppBuilder && npm install -f && cd .. && npm install -f && cd ../log_manager && npm install -f && cd ../notification_email && npm install -f && cd ../plugins/ABDesigner && npm install -f && cd ../../process_manager/AppBuilder && npm install -f && cd .. && npm install -f && cd ../relay && npm install -f && cd ../tenant_manager && npm install -f && cd ../user_manager/AppBuilder && npm install -f && cd .. && npm install -f && cd ../web && npm install -f"
   }
 }
