@@ -4,7 +4,7 @@ rm ./drop_all_tables.sql
 echo "SET FOREIGN_KEY_CHECKS = 0;" > ./drop_all_tables.sql
 
 ## PUll all our tables out of the dump:
-( mysqldump --add-drop-table --no-data -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" | grep 'DROP TABLE' ) >> ./drop_all_tables.sql
+( mariadb-dump --add-drop-table --no-data -u $DB_USER -p$DB_PASSWORD "appbuilder-$TENANT" | grep 'DROP TABLE' ) >> ./drop_all_tables.sql
 
 ## Remove all our remaining Views as well:
 echo \
