@@ -5,7 +5,7 @@
       "db": "master",
       "web": "master",
       "custom_reports": "develop",
-      "definition_manager": "develop",
+      "definition_manager": "1.0.0",
       "file_processor": "develop",
       "log_manager": "1.0.0",
       "notification_email": "1.0.0",
