@@ -208,7 +208,7 @@ VALUES
 	('c0df1b24-ff0b-484c-99de-dbfd42386fcb','site_multilingual_label->label_needs_translation','field','{\"id\":\"c0df1b24-ff0b-484c-99de-dbfd42386fcb\",\"type\":\"field\",\"key\":\"number\",\"icon\":\"hashtag\",\"isImported\":0,\"columnName\":\"label_needs_translation\",\"settings\":{\"isImported\":true,\"showIcon\":1,\"required\":0,\"width\":0,\"unique\":0,\"default\":\"NULL\",\"typeFormat\":\"none\",\"typeDecimals\":\"none\",\"typeDecimalPlaces\":\"none\",\"typeRounding\":\"none\",\"typeThousands\":\"none\",\"validation\":0,\"validateMinimum\":\"\",\"validateMaximum\":\"\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"label needs translation\"},{\"language_code\":\"ko\",\"label\":\"label needs translation\"},{\"language_code\":\"zh-hans\",\"label\":\"label needs translation\"},{\"language_code\":\"th\",\"label\":\"label needs translation\"}]}','2020-09-11 02:34:37','2022-02-25 05:33:25'),
 	('c0f6b592-9558-485d-8f2c-78abbd4434bd','Add User - Default Roles.form.textbox','view','{\"id\":\"c0f6b592-9558-485d-8f2c-78abbd4434bd\",\"type\":\"view\",\"key\":\"textbox\",\"icon\":\"i-cursor\",\"name\":\"Add User - Default Roles.form.textbox\",\"settings\":{\"type\":\"single\",\"objectId\":\"228e3d91-5e42-49ec-b37c-59323ae433a1\",\"fieldId\":\"6d86c133-34b3-4569-b42e-1b1fe0e8e9cc\",\"required\":\"0\",\"disable\":\"0\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"Add User - Default Roles.form.textbox\"}],\"position\":{\"dx\":\"1\",\"dy\":\"1\",\"x\":\"0\",\"y\":\"1\"},\"isRoot\":\"false\"}','2022-02-08 07:26:32','2022-02-25 05:33:35'),
 	('c247b11a-64b0-443e-a1e5-06478d380b29','SiteFile->type','field','{\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":\"0\",\"columnName\":\"type\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":100},\"translations\":[{\"language_code\":\"en\",\"label\":\"type\"}],\"id\":\"c247b11a-64b0-443e-a1e5-06478d380b29\"}','2021-04-12 04:12:50','2022-02-25 05:33:25'),
-	('c33692f3-26b7-4af3-a02e-139fb519296d','ROLE','object','{\"id\":\"c33692f3-26b7-4af3-a02e-139fb519296d\",\"type\":\"object\",\"name\":\"ROLE\",\"labelFormat\":\"\",\"isImported\":\"0\",\"isExternal\":\"0\",\"tableName\":\"SITE_ROLE\",\"primaryColumnName\":\"uuid\",\"transColumnName\":\"\",\"urlPath\":\"\",\"objectWorkspace\":{\"frozenColumnID\":\"\",\"filterConditions\":{\"glue\":\"and\"},\"sortFields\":[],\"hiddenFields\":[]},\"isSystemObject\":1,\"translations\":[{\"language_code\":\"en\",\"label\":\"Role\"}],\"fieldIDs\":[\"f1fccbbf-f226-4e9e-aa6a-119f8cc309b6\",\"4585d5cb-0eea-461d-a326-61187c88520f\",\"e4c760e1-ff9c-40dc-80d5-b1f76d59e140\",\"9d6d77be-eef9-46c5-b7f2-df44d44d9e61\",\"07e6a725-aba0-42e6-9b38-984fef7e8274\",\"9d1b0ee4-6807-4938-9df7-b551dcea7eaa\"],\"objectWorkspaceViews\":{\"currentViewID\":\"bee1cedc-f5f8-41d8-8558-a0465824d5b2\",\"list\":[{\"id\":\"bee1cedc-f5f8-41d8-8558-a0465824d5b2\",\"translations\":[{\"language_code\":\"en\",\"label\":\"grid\"}],\"isDefaultView\":\"true\",\"name\":\"Default Grid\",\"filterConditions\":{\"glue\":\"and\"},\"frozenColumnID\":\"\",\"type\":\"grid\"}]}}',NULL,'2022-04-07 03:08:47'),
+	('c33692f3-26b7-4af3-a02e-139fb519296d','ROLE','object','{\"id\":\"c33692f3-26b7-4af3-a02e-139fb519296d\",\"type\":\"object\",\"name\":\"ROLE\",\"labelFormat\":\"\",\"isImported\":\"0\",\"isExternal\":\"0\",\"tableName\":\"SITE_ROLE\",\"primaryColumnName\":\"uuid\",\"transColumnName\":\"\",\"urlPath\":\"\",\"objectWorkspace\":{\"frozenColumnID\":\"\",\"filterConditions\":{\"glue\":\"and\"},\"sortFields\":[],\"hiddenFields\":[]},\"isSystemObject\":\"true\",\"translations\":[{\"language_code\":\"en\",\"label\":\"Role\"}],\"fieldIDs\":[\"f1fccbbf-f226-4e9e-aa6a-119f8cc309b6\",\"4585d5cb-0eea-461d-a326-61187c88520f\",\"e4c760e1-ff9c-40dc-80d5-b1f76d59e140\",\"9d6d77be-eef9-46c5-b7f2-df44d44d9e61\",\"07e6a725-aba0-42e6-9b38-984fef7e8274\",\"9d1b0ee4-6807-4938-9df7-b551dcea7eaa\",\"8ff70bee-6cb6-11ee-b40b-02420a00010d\"],\"objectWorkspaceViews\":{\"currentViewID\":\"bee1cedc-f5f8-41d8-8558-a0465824d5b2\",\"list\":[{\"id\":\"bee1cedc-f5f8-41d8-8558-a0465824d5b2\",\"translations\":[{\"language_code\":\"en\",\"label\":\"grid\"}],\"isDefaultView\":\"true\",\"name\":\"Default Grid\",\"filterConditions\":{\"glue\":\"and\"},\"frozenColumnID\":\"\",\"type\":\"grid\"}]}}',NULL,'2022-04-07 03:08:47'),
 	('c675c196-a0d3-42ad-bac5-835c397d58bb','site_multilingual_language->yoLanguage','field','{\"type\":\"field\",\"key\":\"connectObject\",\"icon\":\"external-link\",\"isImported\":\"0\",\"columnName\":\"yoLanguage\",\"settings\":{\"showIcon\":1,\"linkObject\":\"228e3d91-5e42-49ec-b37c-59323ae433a1\",\"linkType\":\"many\",\"linkViaType\":\"one\",\"isCustomFK\":1,\"indexField\":\"5361b46c-ce11-42ed-8615-1a08d8943633\",\"indexField2\":\"\",\"isSource\":0,\"width\":140,\"required\":0,\"unique\":0,\"linkColumn\":\"412ffc8d-3342-4f7d-8345-5434e11a8fd8\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"site user\"}],\"id\":\"c675c196-a0d3-42ad-bac5-835c397d58bb\"}','2020-09-28 20:00:59','2022-02-25 05:33:25'),
 	('c6be3644-8af5-4150-8f3e-52337f5f2a75','ProcessForm->responder','field','{\"type\":\"field\",\"key\":\"user\",\"icon\":\"user-o\",\"isImported\":\"0\",\"idReimport\":\"280bcdc4-3632-4eca-b74b-f6e3c7016e02\",\"columnName\":\"responder\",\"settings\":{\"showIcon\":1,\"required\":0,\"unique\":0,\"validationRules\":\"[]\",\"isMultiple\":0,\"isCurrentUser\":0,\"editable\":1,\"isShowProfileImage\":0,\"isShowUsername\":1,\"width\":130,\"linkObject\":\"228e3d91-5e42-49ec-b37c-59323ae433a1\",\"isCustomFK\":1,\"isSource\":1,\"indexField\":\"5760560b-c078-47ca-98bf-e18ac492a561\",\"linkType\":\"one\",\"linkViaType\":\"many\",\"linkColumn\":\"280bcdc4-3632-4eca-b74b-f6e3c7016e02\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"responder\"}],\"id\":\"c6be3644-8af5-4150-8f3e-52337f5f2a75\"}','2021-04-29 06:16:33','2022-02-25 05:33:25'),
 	('c75a42b2-e764-495c-8a16-d090c2a7a6b3','ProcessForm->response','field','{\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":\"0\",\"columnName\":\"response\",\"settings\":{\"showIcon\":1,\"required\":0,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":120},\"translations\":[{\"language_code\":\"en\",\"label\":\"response\"}],\"id\":\"c75a42b2-e764-495c-8a16-d090c2a7a6b3\"}','2021-03-12 07:09:07','2022-02-25 05:33:25'),
@@ -259,7 +259,16 @@ VALUES
 	('d9247049-dd05-4c67-854c-2f66352d6cad','start','trigger','{\"translations\":[{\"language_code\":\"en\",\"label\":\"start\"}],\"id\":\"d9247049-dd05-4c67-854c-2f66352d6cad\",\"name\":\"start\",\"type\":\"trigger\",\"processID\":\"3ab65ed1-93d0-4674-842b-3e911a8de6b4\",\"diagramID\":\"StartEvent_1\",\"laneDiagramID\":\"?laneID?\",\"key\":\"TriggerLifecycle\",\"triggerKey\":\"228e3d91-5e42-49ec-b37c-59323ae433a1.added\",\"objectID\":\"228e3d91-5e42-49ec-b37c-59323ae433a1\",\"lifecycleKey\":\"added\"}','2022-06-17 08:53:29','2022-06-17 09:04:28'),
 	('5a37cf5c-7339-4098-8059-3e89c3bd5cff','admin','process.task.service.getResetPasswordUrl','{\"translations\":[{\"language_code\":\"en\",\"label\":\"admin\"}],\"id\":\"5a37cf5c-7339-4098-8059-3e89c3bd5cff\",\"name\":\"admin\",\"type\":\"process.task.service.getResetPasswordUrl\",\"processID\":\"3ab65ed1-93d0-4674-842b-3e911a8de6b4\",\"diagramID\":\"Activity_096cj7y\",\"laneDiagramID\":null,\"key\":\"GetResetPasswordUrl\",\"email\":\"no-reply@digiserve.org\"}','2022-06-17 08:54:10','2022-06-17 09:04:28'),
 	('b423ba53-c133-4eb5-983c-01dd39eaadd7','indy','process.task.email','{\"translations\":[{\"language_code\":\"en\",\"label\":\"indy\"}],\"id\":\"b423ba53-c133-4eb5-983c-01dd39eaadd7\",\"name\":\"indy\",\"type\":\"process.task.email\",\"processID\":\"3ab65ed1-93d0-4674-842b-3e911a8de6b4\",\"diagramID\":\"Activity_1x7jlky\",\"laneDiagramID\":\"?laneID?\",\"key\":\"Email\",\"to\":\"2\",\"from\":\"2\",\"subject\":\"++Reset Password URL++\",\"message\":\"<p>Please Click for Get Reset Password URL <a title=\\\"Reset Password Link\\\" href=\\\"{%= admin.url %}\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">{%= admin.url %}</a></p>\",\"toCustom\":\"no-reply@digiserve.org\",\"fromCustom\":\"no-reply@digiserve.org\",\"toUsers\":{\"useRole\":0,\"role\":null,\"useAccount\":0,\"account\":null},\"fromUsers\":{\"useRole\":0,\"role\":null,\"useAccount\":0,\"account\":null}}','2022-06-17 08:55:59','2022-06-17 09:04:28'),	
-	('f691e8ce-9565-4bb3-8868-561cae61ff9e','End','process.task.end','{\"translations\":[{\"language_code\":\"en\",\"label\":\"End\"}],\"id\":\"f691e8ce-9565-4bb3-8868-561cae61ff9e\",\"name\":\"End\",\"type\":\"process.task.end\",\"processID\":\"3ab65ed1-93d0-4674-842b-3e911a8de6b4\",\"diagramID\":\"Event_0tre5qq\",\"laneDiagramID\":null,\"key\":\"End\"}','2022-06-17 08:56:06.000','2022-06-17 09:04:28.000');
+	('f691e8ce-9565-4bb3-8868-561cae61ff9e','End','process.task.end','{\"translations\":[{\"language_code\":\"en\",\"label\":\"End\"}],\"id\":\"f691e8ce-9565-4bb3-8868-561cae61ff9e\",\"name\":\"End\",\"type\":\"process.task.end\",\"processID\":\"3ab65ed1-93d0-4674-842b-3e911a8de6b4\",\"diagramID\":\"Event_0tre5qq\",\"laneDiagramID\":null,\"key\":\"End\"}','2022-06-17 08:56:06.000','2022-06-17 09:04:28.000'),
+	('d734fe8c-b615-446c-8a5f-793ddece19f9','KEY','object','{\"id\":\"d734fe8c-b615-446c-8a5f-793ddece19f9\",\"type\":\"object\",\"name\":\"KEY\",\"labelFormat\":\"{b86eb947-06f2-47e4-b79a-9aaf896a0b69}\",\"isImported\":0,\"isExternal\":0,\"tableName\":\"SITE_KEY\",\"primaryColumnName\":\"uuid\",\"transColumnName\":\"\",\"urlPath\":\"\",\"objectWorkspace\":{\"sortFields\":[],\"filterConditions\":{},\"frozenColumnID\":\"\",\"hiddenFields\":[]},\"isSystemObject\":\"true\",\"translations\":[{\"language_code\":\"en\",\"label\":\"Key\"}],\"fieldIDs\":[\"b86eb947-06f2-47e4-b79a-9aaf896a0b69\",\"8ed87a85-14c0-4420-8c64-999a43d456c9\",\"8aaf7041-e401-443d-abf7-5d698171400a\"],\"importedFieldIDs\":[],\"indexIDs\":[],\"objectWorkspaceViews\":{\"currentViewID\":\"5def4544-1cc7-43e3-adab-48ae5de63eb3\",\"list\":[{\"id\":\"5def4544-1cc7-43e3-adab-48ae5de63eb3\",\"translations\":[{\"language_code\":\"en\",\"label\":\"grid\"}],\"isDefaultView\":true,\"name\":\"Default Grid\",\"sortFields\":[],\"filterConditions\":{},\"frozenColumnID\":\"\",\"hiddenFields\":[],\"type\":\"grid\"}]}}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('8ed87a85-14c0-4420-8c64-999a43d456c9','KEY->DefinitionID','field','{\"id\":\"8ed87a85-14c0-4420-8c64-999a43d456c9\",\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":0,\"columnName\":\"DefinitionID\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":160},\"translations\":[{\"language_code\":\"en\",\"label\":\"DefinitionID\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('b86eb947-06f2-47e4-b79a-9aaf896a0b69','KEY->Key','field','{\"id\":\"b86eb947-06f2-47e4-b79a-9aaf896a0b69\",\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":0,\"columnName\":\"Key\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":100},\"translations\":[{\"language_code\":\"en\",\"label\":\"Key\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('8aaf7041-e401-443d-abf7-5d698171400a','KEY->Roles','field','{\"id\":\"8aaf7041-e401-443d-abf7-5d698171400a\",\"key\":\"connectObject\",\"label\":\"Roles\",\"columnName\":\"roles\",\"settings\":{\"linkObject\":\"c33692f3-26b7-4af3-a02e-139fb519296d\",\"linkType\":\"many\",\"linkViaType\":\"many\",\"linkColumn\":\"8ff70bee-6cb6-11ee-b40b-02420a00010d\",\"isSource\":1,\"showIcon\":1,\"required\":0,\"width\":0,\"unique\":0,\"isCustomFK\":0,\"indexField\":\"\",\"indexField2\":\"\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"Roles\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('8ff70bee-6cb6-11ee-b40b-02420a00010d','ROLE->Keys','field','{\"id\":\"8ff70bee-6cb6-11ee-b40b-02420a00010d\",\"key\":\"connectObject\",\"columnName\":\"keys\",\"settings\":{\"linkObject\":\"d734fe8c-b615-446c-8a5f-793ddece19f9\",\"linkType\":\"many\",\"linkViaType\":\"many\",\"linkColumn\":\"8aaf7041-e401-443d-abf7-5d698171400a\",\"isSource\":0,\"showIcon\":1,\"required\":0,\"width\":0,\"unique\":0,\"isCustomFK\":0,\"indexField\":\"\",\"indexField2\":\"\"},\"translations\":[{\"language_code\":\"en\",\"label\":\"Keys\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('db5b3b26-5300-4c92-bc73-8ce4f4696992','SECRET','object','{\"id\":\"db5b3b26-5300-4c92-bc73-8ce4f4696992\",\"type\":\"object\",\"name\":\"SECRET\",\"isImported\":\"0\",\"isExternal\":\"0\",\"tableName\":\"SITE_SECRET\",\"primaryColumnName\":\"uuid\",\"transColumnName\":\"\",\"urlPath\":\"\",\"objectWorkspace\":{\"sortFields\":[],\"filterConditions\":{},\"frozenColumnID\":\"\",\"hiddenFields\":[]},\"isSystemObject\":\"true\",\"translations\":[{\"language_code\":\"en\",\"label\":\"Secret\"}],\"fieldIDs\":[\"ac64f465-8fdd-4d0f-8752-1e23f55aea4e\",\"7d4b2c26-a53e-44a7-922e-93ba24f30c5f\",\"f9e694aa-bba1-466a-b2c3-440985cb0c7e\"],\"objectWorkspaceViews\":{\"currentViewID\":\"5def4544-1cc7-43e3-adab-48ae5de63eb3\",\"list\":[{\"id\":\"5def4544-1cc7-43e3-adab-48ae5de63eb3\",\"translations\":[{\"language_code\":\"en\",\"label\":\"grid\"}],\"isDefaultView\":true,\"name\":\"Default Grid\",\"sortFields\":[],\"filterConditions\":{},\"frozenColumnID\":\"\",\"hiddenFields\":[],\"type\":\"grid\"}]}}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('7d4b2c26-a53e-44a7-922e-93ba24f30c5f','SECRET->Secret','field','{\"id\":\"7d4b2c26-a53e-44a7-922e-93ba24f30c5f\",\"type\":\"field\",\"key\":\"LongText\",\"icon\":\"align-right\",\"isImported\":0,\"columnName\":\"Secret\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":100},\"translations\":[{\"language_code\":\"en\",\"label\":\"Secret\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('ac64f465-8fdd-4d0f-8752-1e23f55aea4e','SECRET->Name','field','{\"id\":\"ac64f465-8fdd-4d0f-8752-1e23f55aea4e\",\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":0,\"columnName\":\"Name\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":100},\"translations\":[{\"language_code\":\"en\",\"label\":\"Name\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24'),
+	('f9e694aa-bba1-466a-b2c3-440985cb0c7e','SECRET->DefinitionID','field','{\"id\":\"f9e694aa-bba1-466a-b2c3-440985cb0c7e\",\"type\":\"field\",\"key\":\"string\",\"icon\":\"font\",\"isImported\":0,\"columnName\":\"DefinitionID\",\"settings\":{\"showIcon\":1,\"required\":1,\"unique\":0,\"validationRules\":\"[]\",\"default\":\"\",\"supportMultilingual\":0,\"width\":160},\"translations\":[{\"language_code\":\"en\",\"label\":\"DefinitionID\"}]}','2023-10-16 10:27:24','2023-10-16 10:27:24');
 
 /*!40000 ALTER TABLE `appbuilder_definition` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -716,6 +725,61 @@ CREATE TABLE `SITE_RELAY_USER` (
   UNIQUE KEY `siteuser_guid` (`siteuser_guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+
+
+# Dump of table SITE_KEY
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `SITE_KEY`;
+
+CREATE TABLE `SITE_KEY` (
+  `uuid` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `properties` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Key` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DefinitionID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`uuid`),
+  UNIQUE KEY `SITE_KEY_Key` (`Key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
+
+
+# Dump of table AB_JOINMN_KEY_ROLE_Roles
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `AB_JOINMN_KEY_ROLE_roles`;
+
+CREATE TABLE `AB_JOINMN_KEY_ROLE_roles` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `Key` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ROLE` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `Key_Roles` (`Key`),
+  KEY `Role_Key134` (`ROLE`),
+  CONSTRAINT `Key_Roles` FOREIGN KEY (`Key`) REFERENCES `SITE_KEY` (`uuid`) ON DELETE SET NULL,
+  CONSTRAINT `Role_Key134` FOREIGN KEY (`ROLE`) REFERENCES `SITE_ROLE` (`uuid`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
+
+
+# Dump of table SITE_SECRET
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `SITE_SECRET`;
+
+CREATE TABLE `SITE_SECRET` (
+  `uuid` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `properties` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Secret` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DefinitionID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`uuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
