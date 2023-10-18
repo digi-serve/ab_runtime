@@ -6,7 +6,7 @@
       "web": "1.0.7_d10100.p10103.c20001",
       "custom_reports": "1.0.0",
       "definition_manager": "1.0.1_p10001",
-      "file_processor": "1.0.0",
+      "file_processor": "1.0.3",
       "log_manager": "1.0.0",
       "notification_email": "1.0.0",
       "process_manager": "1.0.2_p10002.c20001",
