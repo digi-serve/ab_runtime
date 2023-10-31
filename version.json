@@ -5,7 +5,7 @@
       "db": "1.0.0",
       "web": "1.0.18_d10202.p10205.c20102",
       "custom_reports": "1.0.7_p10005.c20101",
-      "definition_manager": "1.0.8",
+      "definition_manager": "1.0.13_p10009",
       "file_processor": "1.0.0",
       "log_manager": "1.0.0",
       "notification_email": "1.0.0",
