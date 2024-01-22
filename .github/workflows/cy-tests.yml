@@ -33,6 +33,8 @@ jobs:
            run: ./UP.sh -t -q
            working-directory: ./ab
 
+         - run: docker service ls
+
          # These next steps are to save our ablogs to file
          - run: npm install pm2@latest -g
          - name: Save Logs
