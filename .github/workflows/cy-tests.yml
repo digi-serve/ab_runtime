@@ -33,8 +33,6 @@ jobs:
            run: ./UP.sh -t -q
            working-directory: ./ab
 
-         - run: docker service ls
-
          # These next steps are to save our ablogs to file
          - run: npm install pm2@latest -g
          - name: Save Logs
@@ -47,6 +45,8 @@ jobs:
            # with:
                # resource: http://localhost:8080
                # timeout: 300000
+
+         - run: docker service ls
 
          - name: Run Cypress Tests
            run: npm run test:e2e:ab-runtime -- --browser chrome
