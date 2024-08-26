@@ -48,7 +48,7 @@ jobs:
            with:
              resource: http://localhost:8080
              timeout: 300000
-         - run: sleep 300s
+         - run: sleep 30s
 
          - run: docker service ls
 
