@@ -1,11 +1,5 @@
 import Index from "./transactions/Index.js";
-// import Authenticate from "./transactions/authenticate.js";
-import {
-   ModelInit,
-   ModelGet,
-   ModelCreate,
-   ModelUpdate,
-} from "./transactions/model.js";
+import { AccountingInit, BudgetCreate } from "./transactions/accounting.js";
 import { thinkTime } from "./utils/common.js";
 // define configuration
 export const options = {
@@ -33,19 +27,13 @@ export const options = {
 
 export function setup() {
    // This is setup code. It runs once at the beginning of the test, regardless of the number of VUs.
-   ModelInit();
+   AccountingInit();
 }
 
 export default function () {
    // This is VU code. It runs repeatedly until the test is stopped.
    Index();
-   // thinkTime();
-   // Authenticate();
+
    thinkTime();
-   ModelGet();
-   thinkTime();
-   ModelCreate();
-   thinkTime();
-   ModelUpdate();
-   thinkTime();
+   BudgetCreate();
 }
