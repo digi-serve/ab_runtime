@@ -95,10 +95,14 @@ export function ModelCreate(objID = null, data = null) {
          response = JSON.parse(response);
       }
       if (response?.data?.uuid) {
-         config.recordIDs[o].push(response.data.uuid);
+         config.recordIDs[o]?.push(response.data.uuid);
          // console.log("created :", response.data.uuid);
       }
    }
+   if (response.status == "error") {
+      console.log(response.message);
+   }
+
    return response.data;
    // });
 }

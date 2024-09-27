@@ -24,10 +24,6 @@ const Accounting = {
 };
 
 const LookupKeys = ["Ministry Team", "Responsibility Center", "QX Center"];
-var Lookups = {
-   /* Key : [ <row1>, <row2>, ... <rowN> ] */
-};
-// various connected values we need to use to fill out our data structures
 
 const Options = {
    /* key : [ <option1>, <option2>, ... <optionN> ] */
@@ -57,16 +53,23 @@ function rndString(max = 10) {
    return randomString(randomIntBetween(5, max));
 }
 
-function lookup(key) {
-   console.log("verify:", Lookups);
-   console.log("Lookup:", key);
-   let list = Lookups[key] || [];
-   console.log("Lookup:List:", list.length);
-   console.log("Lookup:List:", list);
+function lookup(sharedData, key) {
+   let list = sharedData.accountingLookups[key] || [];
    const i = randomIntBetween(0, list.length - 1);
-   console.log("Lookup:i:", i);
    const row = list[i];
-   return row.id || row.uuid;
+   let pk = "id";
+   switch (key) {
+      case "Ministry Team":
+         pk = "Name";
+         break;
+      case "Responsibility Center":
+         pk = "RC Name";
+         break;
+      case "QX Center":
+         pk = "QX Code";
+         break;
+   }
+   return row[pk] || row.id || row.uuid;
 }
 
 function option(key) {
@@ -75,31 +78,29 @@ function option(key) {
    return list[i].id;
 }
 
-export function AccountingInit() {
+export function AccountingInit(sharedData) {
+   sharedData.accountingLookups = {};
    LookupKeys.forEach((key) => {
       let oID = Accounting.Objects[key];
-      let values = ModelGet(oID, { populate: "false" });
-      if (key == "QX Center") {
-         console.log(`AccountingInit:${key}:`, values);
-      }
-      Lookups[key] = values;
+      let values = ModelGet(oID, { populate: "false", limit: 10 });
+      sharedData.accountingLookups[key] = values;
    });
-   console.log("final:", Lookups);
+   return sharedData;
 }
 
-export function BudgetCreate(data = null) {
+export function BudgetCreate(sharedData, data = null) {
    data = data || {};
    data["Project Name"] = data["Project Name"] || rndString();
-   // data["Ministry Team"] = data["Ministry Team"] || lookup("Ministry Team"); // Optional: Team Name
+   data["Ministry Team"] =
+      data["Ministry Team"] || lookup(sharedData, "Ministry Team"); // Optional: Team Name
    data["Approver CAS"] = data["Approver CAS"] || rndString();
    data["Purpose"] = data["Purpose"] || rndString(25);
-   data["QX Code"] = data["QX Code"] || lookup("QX Center");
-   data["RC"] = data["RC"] || lookup("Responsibility Center");
+   data["QX"] = data["QX"] || lookup(sharedData, "QX Center");
+   data["RC"] = data["RC"] || lookup(sharedData, "Responsibility Center");
    data["Date"] = data["Date"] || option("Date");
-   console.log("BudgetCreate:data:", data);
-   process.thisWillMakeItCrash();
+
    let response = ModelCreate(Accounting.Objects.Budget, data);
 
-   console.log("BudgetCreate:response:", response);
+   console.log("BudgetCreate:response:", JSON.stringify(response));
    return response;
 }

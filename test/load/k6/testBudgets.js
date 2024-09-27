@@ -1,6 +1,7 @@
 import Index from "./transactions/Index.js";
 import { AccountingInit, BudgetCreate } from "./transactions/accounting.js";
 import { thinkTime } from "./utils/common.js";
+
 // define configuration
 export const options = {
    // define thresholds
@@ -27,13 +28,23 @@ export const options = {
 
 export function setup() {
    // This is setup code. It runs once at the beginning of the test, regardless of the number of VUs.
-   AccountingInit();
+   let data = AccountingInit({});
+   return data;
+   // the data you return here will be sent into each VU's main function.
 }
 
-export default function () {
+export default function (data) {
+   // {obj} data : shared data that was created in setup()
+
    // This is VU code. It runs repeatedly until the test is stopped.
    Index();
-
    thinkTime();
-   BudgetCreate();
+
+   let newBudget = BudgetCreate(data);
+   thinkTime();
+   // create several Expense Categories
+
+   // create several Income sources
+
+   // submit the budget
 }
