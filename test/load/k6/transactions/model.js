@@ -50,7 +50,11 @@ export function ModelGet(objID = null, cond = null) {
    let response = res.body;
    if (response) {
       if (typeof response == "string") {
-         response = JSON.parse(response);
+         try {
+            response = JSON.parse(response);
+         } catch (e) {
+            console.log("parse error:", response);
+         }
       }
       if (response?.data) {
          // // config.recordIDs.push(response.data.uuid);
@@ -135,6 +139,22 @@ export function ModelUpdate(objID = null, rowID = null, data = null) {
       },
    );
    const res = http.put(url, body, {
+      headers: {
+         "Content-Type": "application/json",
+         "user-token": config.userToken,
+      },
+   });
+   check(res, {
+      "response code was 200": (res) => res.status == 200,
+   });
+
+   return res.data;
+}
+
+export function ModelDelete(objID = null, rowID = null) {
+   const url = `${BASEURL}/app_builder/model/${objID}/${rowID}`;
+
+   const res = http.del(url, null, {
       headers: {
          "Content-Type": "application/json",
          "user-token": config.userToken,

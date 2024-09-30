@@ -1,6 +1,13 @@
 import Index from "./transactions/Index.js";
-import { AccountingInit, BudgetCreate } from "./transactions/accounting.js";
+import {
+   AccountingInit,
+   AccountingTeardown,
+   CreateBudget,
+} from "./transactions/accounting.js";
 import { thinkTime } from "./utils/common.js";
+import { randomIntBetween } from "https://jslib.k6.io/k6-utils/1.4.0/index.js";
+
+let numVUs = 500;
 
 // define configuration
 export const options = {
@@ -16,9 +23,9 @@ export const options = {
          executor: "ramping-vus",
          stages: [
             // ramp up to average load of 20 virtual users
-            { duration: "30s", target: 500 },
+            { duration: "30s", target: numVUs },
             // maintain load
-            { duration: "60s", target: 500 },
+            { duration: "60s", target: numVUs },
             // ramp down to zero
             { duration: "30s", target: 0 },
          ],
@@ -40,11 +47,13 @@ export default function (data) {
    Index();
    thinkTime();
 
-   let newBudget = BudgetCreate(data);
-   thinkTime();
-   // create several Expense Categories
+   // create several Budgets
+   let numBudgets = randomIntBetween(1, 3);
+   for (var i = 0; i < numBudgets; i++) {
+      CreateBudget(data);
+   }
+}
 
-   // create several Income sources
-
-   // submit the budget
+export function teardown(data) {
+   AccountingTeardown(data);
 }
