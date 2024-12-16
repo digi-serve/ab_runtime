@@ -10,7 +10,7 @@
       "notification_email": "1.0.11",
       "process_manager": "1.0.88_p10433.c20301",
       "relay": "1.1.4",
-      "tenant_manager": "1.1.5",
+      "tenant_manager": "1.1.6",
       "user_manager": "1.1.51_p10433.c20301",
       "web": "1.0.171_d10401.p11004.c20300"
    },
