@@ -4,7 +4,7 @@
       "appbuilder": "1.2.40",
       "db": "1.0.0",
       "custom_reports": "1.0.128_p10433.c20301",
-      "definition_manager": "1.1.58_p10433.c20301",
+      "definition_manager": "1.1.59",
       "file_processor": "1.1.64_p10432.c20300",
       "log_manager": "1.1.7",
       "notification_email": "1.0.11",
