@@ -8,7 +8,7 @@
       "file_processor": "1.1.66_p10434",
       "log_manager": "1.1.8",
       "notification_email": "1.0.12",
-      "process_manager": "1.0.89",
+      "process_manager": "1.0.90_p10434",
       "relay": "1.1.5",
       "tenant_manager": "1.1.6",
       "user_manager": "1.1.51_p10433.c20301",
