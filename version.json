@@ -11,7 +11,7 @@
       "process_manager": "1.0.104_p10448.c20409",
       "relay": "1.1.5",
       "tenant_manager": "1.1.6",
-      "user_manager": "1.1.65_p10447.c20408",
+      "user_manager": "1.1.66_p10448.c20409",
       "web": "1.0.185_d10402.p11019.c20407"
    },
    "version": "2.3.140"
