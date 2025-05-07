@@ -12,20 +12,20 @@
     "@slack/bolt": "^3.17.1",
     "async": "^3.2.4",
     "dotenv": "^16.0.3",
-    "nodemon": "^2.0.20",
-    "semver": "^7.7.1",
     "shelljs": "^0.8.4"
   },
   "scripts": {
-    "update": "./Update.sh",
     "cypress:open": "env-cmd cypress open --project ./test/e2e",
-    "test:boot": "./testUP.sh",
-    "test:down": "./testDown.sh",
+	"logs": "env-cmd docker compose logs -f",
+	"start": "env-cmd docker compose up",
+	"stop": "env-cmd docker compose down",
+	"swarm:logs": "env-cmd node logs",
+	"swarm:start": "env-cmd docker stack deploy -c docker-compose.yml $STACKNAME",
+	"swarm:stop": "env-cmd docker stack rm $STACKNAME",
     "test:e2e": "env-cmd cypress run --reporter dot --project ./test/e2e",
     "test:e2e:ab-runtime": "env-cmd cypress run --config-file cypress.ab_runtime.mjs --reporter dot --project ./test/e2e",
     "test:e2e:app": "env-cmd cypress run --config-file cypress.app.mjs --reporter dot --project ./test/e2e",
     "test:e2e:ab-designer": "env-cmd cypress run --config-file cypress.plugin.ab_designer.mjs --reporter dot --project ./test/e2e",
-    "test:reset": "bash testReset.sh"
-  },
-  "version": "2.3.53"
+	"update": "bash ./update.sh"
+  }
 }

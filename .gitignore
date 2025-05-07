@@ -8,13 +8,10 @@
 ################################################
 
 node_modules
-services
 nginx/ssl/**
 !nginx/ssl/.gitkeep
-developer
-config/local.js
-docker-compose.*
-!/examples/*
+config/*
+!config/example.local.js
 
 # Ignore data stored in our shared /data directory
 data/**
@@ -61,5 +58,3 @@ lib-cov
 *.pid
 
 test/setup/reset-user.sql
-ab_system_monitor.js
-.env
