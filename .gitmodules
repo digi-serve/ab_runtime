@@ -1,0 +1,57 @@
+[submodule "developer/api_sails"]
+	path = developer/services/api_sails
+	url = https://github.com/digi-serve/ab_service_api_sails.git
+[submodule "developer/appbuilder"]
+	path = developer/services/appbuilder
+	url = https://github.com/digi-serve/ab_service_appbuilder.git
+[submodule "developer/custom_reports"]
+	path = developer/services/custom_reports
+	url = https://github.com/digi-serve/ab_service_custom_reports.git
+[submodule "developer/db"]
+	path = developer/services/db
+	url = https://github.com/digi-serve/ab_service_db.git
+[submodule "developer/definition_manager"]
+	path = developer/services/definition_manager
+	url = https://github.com/digi-serve/ab_service_definition_manager.git
+[submodule "developer/file_processor"]
+	path = developer/services/file_processor
+	url = https://github.com/digi-serve/ab_service_file_processor.git
+[submodule "developer/log_manager"]
+	path = developer/services/log_manager
+	url = https://github.com/digi-serve/ab_service_log_manager.git
+[submodule "developer/migration_manager"]
+	path = developer/services/migration_manager
+	url = https://github.com/digi-serve/ab_migration_manager.git
+[submodule "developer/notification_email"]
+	path = developer/services/notification_email
+	url = https://github.com/digi-serve/ab_service_notification_email.git
+[submodule "developer/process_manager"]
+	path = developer/services/process_manager
+	url = https://github.com/digi-serve/ab_service_process_manager.git
+[submodule "developer/relay"]
+	path = developer/services/relay
+	url = https://github.com/digi-serve/ab_service_relay.git
+[submodule "developer/tenant_manager"]
+	path = developer/services/tenant_manager
+	url = https://github.com/digi-serve/ab_service_tenant_manager.git
+[submodule "developer/ui/platform_web"]
+	path = developer/uis/platform_web
+	url = https://github.com/digi-serve/ab_platform_web.git
+[submodule "developer/ui/plugins/ABDesigner"]
+	path = developer/uis/plugins/ABDesigner
+	url = https://github.com/digi-serve/plugin_ABDesigner.git
+[submodule "developer/ui/plugins/HRTeams"]
+	path = developer/uis/plugins/HRTeams
+	url = https://github.com/digi-serve/plugin_HRTeams.git
+[submodule "developer/ui/pwa"]
+	path = developer/uis/pwa
+	url = https://github.com/digi-serve/test_pwa.git
+[submodule "developer/ui/web"]
+	path = developer/uis/web
+	url = https://github.com/digi-serve/ab_service_web.git
+[submodule "developer/user_manager"]
+	path = developer/services/user_manager
+	url = https://github.com/digi-serve/ab_service_user_manager.git
+[submodule "developer/libs/ab-utils"]
+	path = developer/libs/ab-utils
+	url = https://github.com/digi-serve/ab-utils.git
